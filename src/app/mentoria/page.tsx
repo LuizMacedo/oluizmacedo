@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
@@ -9,9 +10,9 @@ import { CTASection } from '@/components/sections/CTASection';
 import { siteConfig } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Os Intencionais — Mentoria',
+  title: 'Mentoria — Luiz Macedo',
   description:
-    'Mentoria 1:1 com Luiz Macedo para profissionais de tech estagnados no operacional que querem parar de gerir o como e começar a gerir o porquê.',
+    'Mentoria para profissionais de Tech que buscam mais clareza sobre produto, senioridade e carreira internacional.',
 };
 
 export default function MentoriaPage() {
@@ -24,25 +25,25 @@ export default function MentoriaPage() {
         </div>
         <Container size="narrow" className="relative z-10">
           <div className="text-center">
-            <Badge className="mb-6">Os Intencionais</Badge>
+            <Badge className="mb-6">Mentoria</Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
-              Pare de gerir o como.{' '}
-              <span className="text-accent">Comece a gerir o porquê.</span>
+              Mentoria para profissionais de Tech que buscam mais{' '}
+              <span className="text-accent">clareza sobre os próximos passos da carreira.</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted leading-relaxed max-w-2xl mx-auto">
-              Mentoria 1:1 para profissionais de tech estagnados no operacional que querem
-              tomar decisões intencionais, influenciar estratégia e chegar no próximo nível.
+              Um programa de mentoria com acompanhamento para quem quer tomar decisões
+              profissionais com mais contexto, profundidade e direção.
             </p>
             <div className="mt-10">
               <Button href={siteConfig.links.tally.mentoria} external size="lg">
-                Quero aplicar para Os Intencionais
+                Quero saber mais sobre a mentoria
               </Button>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* O Problema */}
+      {/* O Cenário */}
       <section className="py-20 md:py-28 border-t border-border">
         <Container size="narrow">
           <SectionHeader
@@ -52,9 +53,9 @@ export default function MentoriaPage() {
           />
           <div className="mt-10 space-y-4 text-lg text-muted leading-relaxed">
             <p>
-              Você entrega, trabalha duro, mas sente que virou executor. O crescimento
-              travou e você não sabe se o que falta é habilidade técnica, posicionamento
-              ou simplesmente visibilidade.
+              Você entrega, trabalha duro, mas sente que a evolução travou.
+              Não sabe se o que falta é habilidade técnica, posicionamento
+              ou visibilidade.
             </p>
             <p>
               Consome conteúdo, assiste palestras, mas não consegue transformar
@@ -62,21 +63,20 @@ export default function MentoriaPage() {
               com quem validar as decisões que precisa tomar.
             </p>
             <p>
-              Se você está estagnado no operacional, o problema não é esforço.
-              É intenção. Você precisa de alguém que já navegou na incerteza
-              e pode te mostrar o caminho com clareza.
+              A mentoria existe para isso: trazer clareza, contexto e uma perspectiva
+              sênior para as decisões que realmente importam na sua carreira.
             </p>
           </div>
         </Container>
       </section>
 
-      {/* O Método Intencional */}
+      {/* Como funciona */}
       <section className="py-20 md:py-28 bg-surface/30 border-t border-border">
         <Container>
           <SectionHeader
-            label="O Método"
-            title="O Método Intencional"
-            description="Navegando na incerteza, gestão de stakeholders e alavancagem de carreira."
+            label="Como funciona"
+            title="A estrutura da mentoria"
+            description="Seis frentes de trabalho que orientam o acompanhamento, adaptadas ao momento de cada profissional."
           />
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {methodSteps.map((item, i) => (
@@ -159,36 +159,42 @@ export default function MentoriaPage() {
         </Container>
       </section>
 
-      {/* Sobre Luiz */}
+      {/* Sobre o mentor */}
       <section className="py-20 md:py-28 border-t border-border">
         <Container size="narrow">
           <div className="text-center">
-            <div className="w-20 h-20 rounded-full bg-accent/10 border border-accent/20 flex items-center justify-center mx-auto mb-6">
-              <span className="text-accent text-2xl font-bold">LM</span>
+            <div className="w-24 h-24 rounded-full overflow-hidden border border-accent/20 mx-auto mb-6">
+              <Image
+                src="/images/luiz-macedo.jpg"
+                alt="Luiz Macedo"
+                width={96}
+                height={96}
+                className="w-full h-full object-cover"
+              />
             </div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Sobre o mentor</h2>
             <div className="mt-6 space-y-4 text-muted leading-relaxed text-left max-w-2xl mx-auto">
               <p>
-                Sou Luiz Macedo, Senior Product Manager na Microsoft, vivendo no Texas, EUA.
-                São 20 anos trabalhando com tecnologia e 12 anos na Microsoft — de startups
-                brasileiras a Big Tech global.
+                Sou Luiz Macedo, Senior Product Manager na Microsoft, vivendo no Texas, EUA
+                há quase 10 anos. São 20 anos trabalhando com tecnologia e 12 na Microsoft,
+                em experiências que passam por engenharia, produto, certificações e contextos globais.
               </p>
               <p>
-                Mestre em Product Management pela Capitol Technology University e co-criador
-                da certificação AZ-400 da Microsoft. Acredito que crescimento profissional
-                real vem de decisões intencionais, não de fórmulas mágicas.
+                Tenho M.S. in Product Management pela Capitol Technology University e
+                graduação em Sistemas de Informação. Participei da criação de certificações
+                da Microsoft, incluindo a AZ-400.
               </p>
               <p>
-                Na mentoria, trago a experiência de quem navega na incerteza todos os dias
-                e a perspectiva de quem sabe que resultado sustentável exige equilíbrio.
-                Vida real, café e liberdade.
+                Na mentoria, trago a perspectiva de quem já passou por muitas das situações
+                que os mentorados enfrentam hoje — com foco em clareza, contexto e decisões
+                profissionais concretas.
               </p>
             </div>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
               <Badge variant="muted">Microsoft (12 anos)</Badge>
-              <Badge variant="muted">MS em Product Management</Badge>
+              <Badge variant="muted">M.S. in Product Management</Badge>
               <Badge variant="muted">Co-criador AZ-400</Badge>
-              <Badge variant="muted">Carreira Internacional</Badge>
+              <Badge variant="muted">Texas, EUA</Badge>
             </div>
           </div>
         </Container>
@@ -210,9 +216,9 @@ export default function MentoriaPage() {
       {/* CTA Final */}
       <CTASection
         label="Próximo passo"
-        title="Pronto para ser intencional?"
-        description="Aplique para Os Intencionais. Vou analisar seu perfil e, se fizer sentido, entramos em contato para alinhar expectativas e começar."
-        buttonText="Aplicar para Os Intencionais"
+        title="Quer saber mais sobre a mentoria?"
+        description="Preencha o formulário com algumas informações sobre o seu momento profissional. Se houver fit, entro em contato para uma conversa inicial."
+        buttonText="Preencher formulário"
         buttonHref={siteConfig.links.tally.mentoria}
       />
     </>
@@ -221,66 +227,66 @@ export default function MentoriaPage() {
 
 const methodSteps = [
   {
-    title: 'Diagnóstico intencional',
-    description: 'Entenda onde você está, onde quer chegar e o que realmente está te travando — sem autoengano.',
+    title: 'Diagnóstico do momento atual',
+    description: 'Entender onde você está profissionalmente, quais são os desafios reais e o que faz sentido priorizar agora.',
   },
   {
-    title: 'Navegando na incerteza',
-    description: 'Aprenda a tomar decisões com informação incompleta, como se faz em Big Tech todos os dias.',
+    title: 'Clareza sobre objetivo e contexto',
+    description: 'Definir com objetividade o que você quer alcançar e quais são as variáveis relevantes para isso.',
   },
   {
-    title: 'Gestão de stakeholders',
-    description: 'Domine as conversas que movem sua carreira — de 1:1s a apresentações executivas e influência lateral.',
+    title: 'Decisões de posicionamento',
+    description: 'Como se posicionar com credibilidade dentro e fora da empresa, de forma consistente e alinhada ao seu perfil.',
   },
   {
-    title: 'Posicionamento estratégico',
-    description: 'Pare de ser invisível. Aprenda a se posicionar com credibilidade dentro e fora da empresa.',
+    title: 'Gestão de stakeholders e comunicação',
+    description: 'Trabalhar a comunicação com liderança, pares e times — da 1:1 à apresentação executiva.',
   },
   {
-    title: 'Alavancagem de carreira',
-    description: 'Identifique e ative os pontos de alavanca que aceleram seu crescimento sem depender de sorte.',
+    title: 'Plano de desenvolvimento',
+    description: 'Construir um plano realista de crescimento com metas, prioridades e prazos definidos.',
   },
   {
-    title: 'Accountability real',
-    description: 'Alguém que cobra resultado, celebra progresso e te ajuda a manter o foco no que importa.',
+    title: 'Acompanhamento e revisão',
+    description: 'Revisões periódicas para ajustar o plano conforme a realidade muda — com contexto e feedback direto.',
   },
 ];
 
 const forWho = [
-  'PMs (júnior a staff) estagnados no operacional que querem influenciar estratégia',
-  'Profissionais de tech em transição para Product Management',
-  'Quem quer preparar currículo e perfil para Big Tech e empresas globais',
-  'Profissionais que querem gerir o porquê — não só o como',
-  'Quem busca feedback direto, sem enrolação, de quem vive Big Tech há 12 anos',
+  'Profissionais de produto que querem sair do operacional e ganhar mais clareza sobre posicionamento',
+  'Profissionais de Tech avaliando transição para Product Management',
+  'Quem está considerando oportunidades em empresas globais ou carreira internacional',
+  'Profissionais que querem feedback sênior, direto e prático sobre decisões de carreira',
+  'Quem busca contexto de quem já viveu situações parecidas em empresa grande',
 ];
 
 const notForWho = [
-  'Quem busca fórmula mágica ou resultado sem esforço',
-  'Profissionais que não têm tempo ou disposição para se comprometer',
-  'Quem quer coaching motivacional ou terapia de carreira',
-  'Pessoas que esperam que o mentor faça o trabalho por elas',
+  'Quem busca fórmula pronta ou resultado sem comprometimento',
+  'Profissionais que não têm disponibilidade para se dedicar ao processo',
+  'Quem espera coaching motivacional ou conselhos genéricos',
+  'Pessoas que esperam que o mentor tome as decisões por elas',
 ];
 
 const whatYouGet = [
   {
-    title: 'Sessões 1:1 por vídeo',
-    description: 'Encontros individuais com foco total no que importa para você. Sem turma, sem conteúdo genérico.',
+    title: 'Sessões por vídeo',
+    description: 'Encontros individuais com foco no que é relevante para o seu momento. Sem turma, sem conteúdo genérico.',
   },
   {
     title: 'Diagnóstico de carreira',
-    description: 'Análise honesta de onde você está e mapeamento claro das lacunas e oportunidades reais.',
+    description: 'Análise honesta de onde você está e mapeamento das oportunidades e pontos de atenção.',
   },
   {
-    title: 'Plano de ação intencional',
-    description: 'Definição de metas concretas, prioridades e próximos passos realistas — com prazo.',
+    title: 'Plano de ação',
+    description: 'Definição de prioridades, próximos passos e metas realistas com prazos claros.',
   },
   {
-    title: 'Feedback direto e construtivo',
-    description: 'Revisão de currículo, LinkedIn, posicionamento, decisões de carreira e gestão de stakeholders.',
+    title: 'Feedback direto',
+    description: 'Revisão de currículo, LinkedIn, posicionamento profissional e decisões de carreira.',
   },
   {
     title: 'Suporte entre sessões',
-    description: 'Canal assíncrono para dúvidas rápidas e acompanhamento entre encontros.',
+    description: 'Canal assíncrono para dúvidas pontuais e acompanhamento entre encontros.',
   },
 ];
 
@@ -288,7 +294,7 @@ const faqItems = [
   {
     question: 'Quanto custa a mentoria?',
     answer:
-      'O valor é discutido diretamente após a análise do seu perfil. Cada mentoria é personalizada, e o investimento reflete isso. Prefiro alinhar expectativas antes de falar de preço.',
+      'O valor é compartilhado após uma primeira análise de perfil e alinhamento de expectativas. Como a proposta ainda é personalizada, prefiro primeiro entender se há fit.',
   },
   {
     question: 'Qual a duração e frequência das sessões?',
@@ -298,7 +304,7 @@ const faqItems = [
   {
     question: 'Preciso ser Product Manager para participar?',
     answer:
-      'Não necessariamente. Os Intencionais é voltado para profissionais de tech com interesse em produto, carreira internacional ou alta performance. Se você está em transição para produto, também faz sentido.',
+      'Não necessariamente. A mentoria é voltada para profissionais de Tech com interesse em produto, carreira internacional ou senioridade. Se você está avaliando uma transição para produto, também faz sentido.',
   },
   {
     question: 'A mentoria é em português ou inglês?',
@@ -308,11 +314,11 @@ const faqItems = [
   {
     question: 'Como funciona o processo de aplicação?',
     answer:
-      'Você preenche um formulário curto com informações sobre seu momento profissional. Eu analiso e, se houver fit, entro em contato para uma conversa inicial antes de começarmos.',
+      'Você preenche um formulário com algumas informações sobre o seu momento profissional. Eu analiso e, se houver fit, entro em contato para uma conversa inicial antes de começarmos.',
   },
   {
-    question: 'O que diferencia Os Intencionais de outras mentorias?',
+    question: 'O que diferencia essa mentoria?',
     answer:
-      'Experiência real de quem vive Big Tech há 12 anos, não teoria. O foco é em decisões intencionais, gestão de stakeholders e alavancagem de carreira — não em motivação vazia ou conteúdo genérico.',
+      'Experiência prática de 20 anos em tecnologia, 12 na Microsoft. O foco é em clareza, contexto e decisões profissionais — não em motivação ou conteúdo genérico.',
   },
 ];

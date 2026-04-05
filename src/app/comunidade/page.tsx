@@ -9,9 +9,9 @@ import { CTASection } from '@/components/sections/CTASection';
 import { siteConfig } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Comunidade Intencionais',
+  title: 'Comunidade — Luiz Macedo',
   description:
-    'Comunidade exclusiva para profissionais de tech que querem crescer com intenção, trocar com pares de alto nível e acelerar resultados.',
+    'Uma comunidade para profissionais de Tech que levam a carreira a sério. Produto, senioridade, carreira internacional e discussões práticas.',
 };
 
 export default function ComunidadePage() {
@@ -26,12 +26,12 @@ export default function ComunidadePage() {
           <div className="text-center">
             <Badge className="mb-6">Em breve</Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
-              Comunidade{' '}
-              <span className="text-accent">Intencionais</span>
+              Uma comunidade para profissionais de Tech que{' '}
+              <span className="text-accent">levam a carreira a sério.</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted leading-relaxed max-w-2xl mx-auto">
-              Um espaço exclusivo para profissionais de tech que querem crescer com intenção,
-              trocar com pares de alto nível e acelerar resultados — juntos.
+              Produto, senioridade, carreira internacional e discussões práticas
+              com menos superficialidade e mais contexto.
             </p>
             <div className="mt-10">
               <Button href={siteConfig.links.tally.waitlist} external size="lg">
@@ -47,24 +47,24 @@ export default function ComunidadePage() {
         <Container size="narrow">
           <SectionHeader
             label="O que é"
-            title="Mais do que um grupo — um ecossistema"
+            title="Um espaço para quem quer mais profundidade"
             align="left"
           />
           <div className="mt-10 space-y-4 text-lg text-muted leading-relaxed">
             <p>
-              A Comunidade Intencionais é o espaço onde profissionais de tech sérios
-              se encontram para trocar experiências reais, desafiar ideias e crescer
-              junto com quem está no mesmo nível de ambição.
+              Um grupo para profissionais de Tech que querem conversar sobre carreira
+              com mais seriedade. Não é sobre quantidade de pessoas — é sobre a qualidade
+              das conversas, a profundidade das trocas e o comprometimento de quem participa.
             </p>
             <p>
-              Não é mais um grupo genérico. É um ecossistema curado para quem
-              quer discutir produto, carreira internacional, gestão de stakeholders
-              e alta performance com profundidade — e com quem realmente entende.
+              Aqui você vai encontrar discussões sobre produto, senioridade, gestão de
+              stakeholders, carreira internacional e decisões profissionais — com contexto,
+              experiência prática e sem superficialidade.
             </p>
             <p>
-              Facilitado por Luiz Macedo, Senior PM na Microsoft com 20 anos de tech
-              e 12 anos na empresa, a comunidade combina conteúdo exclusivo, encontros
-              ao vivo e networking intencional.
+              Facilitado por Luiz Macedo, Senior Product Manager na Microsoft com
+              20 anos em tecnologia e 12 na empresa, a comunidade combina conteúdos
+              selecionados, encontros periódicos e trocas entre profissionais.
             </p>
           </div>
         </Container>
@@ -76,7 +76,7 @@ export default function ComunidadePage() {
           <SectionHeader
             label="Na comunidade"
             title="O que você vai encontrar"
-            description="Conteúdo, conexões e conversas que movem sua carreira."
+            description="Conteúdo, contexto e conversas que contribuem para a sua carreira."
           />
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((item, i) => (
@@ -149,8 +149,8 @@ export default function ComunidadePage() {
       {/* CTA Final */}
       <CTASection
         label="Lista de espera"
-        title="Quer fazer parte dos Intencionais?"
-        description="A comunidade está em construção. Entre na lista de espera para ser avisado assim que abrirmos as portas."
+        title="Quer saber quando a comunidade abrir?"
+        description="A comunidade está em construção. Entre na lista de espera para ser avisado quando as inscrições abrirem."
         buttonText="Entrar na lista de espera"
         buttonHref={siteConfig.links.tally.waitlist}
       />
@@ -160,68 +160,68 @@ export default function ComunidadePage() {
 
 const features = [
   {
-    title: 'Conteúdo exclusivo',
-    description: 'Insights sobre produto, carreira e alta performance que não estão em nenhum blog ou podcast.',
+    title: 'Discussões sobre carreira',
+    description: 'Conversas sobre produto, senioridade, posicionamento e decisões profissionais — com contexto e experiência.',
   },
   {
-    title: 'Encontros ao vivo',
-    description: 'Sessões com Luiz Macedo e convidados sobre temas estratégicos — com espaço para perguntas reais.',
+    title: 'Encontros periódicos',
+    description: 'Sessões ao vivo com temas relevantes e espaço para perguntas reais sobre carreira e produto.',
   },
   {
-    title: 'Networking intencional',
-    description: 'Conexões com profissionais de tech de alto nível que compartilham dos mesmos valores e ambição.',
+    title: 'Trocas entre profissionais',
+    description: 'Conexão com outros profissionais de Tech que também levam a carreira a sério e valorizam profundidade.',
   },
   {
-    title: 'Discussões de alto nível',
-    description: 'Trocas sobre gestão de stakeholders, navegação na incerteza e decisões de carreira complexas.',
+    title: 'Espaço para perguntas reais',
+    description: 'Um canal para discutir dúvidas concretas sobre gestão de stakeholders, transições e posicionamento.',
   },
   {
-    title: 'Acesso a bastidores',
-    description: 'Como decisões são realmente tomadas em Big Tech, sem filtro e sem marketing.',
+    title: 'Conteúdos selecionados',
+    description: 'Reflexões, análises e materiais sobre produto, carreira internacional e senioridade.',
   },
   {
-    title: 'Accountability em grupo',
-    description: 'Um ambiente que te puxa para cima e te mantém no caminho — com pares que cobram resultado.',
+    title: 'Acompanhamento',
+    description: 'Um ambiente que contribui para a sua evolução profissional com consistência e seriedade.',
   },
 ];
 
 const forWho = [
-  'Profissionais de tech (PM, engenharia, design, liderança) que querem crescer com intenção',
-  'Quem já tem experiência e quer trocar com pares de nível similar',
-  'Profissionais interessados em carreira internacional e Big Tech',
-  'Quem valoriza profundidade e está cansado de conteúdo superficial',
+  'Profissionais de Tech (produto, engenharia, design, liderança) que querem conversas com mais profundidade',
+  'Quem tem experiência e quer trocar com profissionais em momento parecido',
+  'Profissionais interessados em carreira internacional e empresas globais',
+  'Quem valoriza contexto e está cansado de conteúdo superficial',
 ];
 
 const notForWho = [
-  'Quem busca networking por quantidade, não qualidade',
+  'Quem busca conexões por quantidade, não qualidade',
   'Profissionais que só querem consumir sem contribuir',
-  'Quem espera fórmula mágica ou atalho para crescimento',
+  'Quem espera solução pronta sem se comprometer com o processo',
 ];
 
 const faqItems = [
   {
     question: 'Quando a comunidade vai abrir?',
     answer:
-      'A comunidade está em fase de construção. Entre na lista de espera para ser avisado em primeira mão quando abrirmos as portas. Quem estiver na lista terá condições especiais.',
+      'A comunidade está em fase de construção. Entre na lista de espera para ser avisado quando as inscrições abrirem. Quem estiver na lista terá prioridade.',
   },
   {
     question: 'A comunidade é paga?',
     answer:
-      'Sim. A comunidade terá um modelo de assinatura para manter a qualidade e o compromisso dos membros. Detalhes serão compartilhados com a lista de espera.',
+      'Sim. A comunidade terá um modelo de assinatura para manter a qualidade e o compromisso dos participantes. Os detalhes serão compartilhados com a lista de espera.',
   },
   {
     question: 'Qual a diferença entre a mentoria e a comunidade?',
     answer:
-      'A mentoria (Os Intencionais) é 1:1 e focada no seu plano individual. A comunidade é sobre troca em grupo, networking e conteúdo coletivo. São complementares.',
+      'A mentoria é individual e focada no seu plano de carreira. A comunidade é sobre trocas em grupo, conversas e conteúdo coletivo. São complementares.',
   },
   {
-    question: 'Preciso ser senior para participar?',
+    question: 'Preciso ser sênior para participar?',
     answer:
-      'Não necessariamente, mas a comunidade é voltada para profissionais com alguma experiência que querem crescer com intenção. O nível das discussões reflete isso.',
+      'Não necessariamente, mas a comunidade é voltada para profissionais com alguma experiência que querem crescer com mais seriedade. As conversas refletem esse contexto.',
   },
   {
     question: 'Como vou acessar a comunidade?',
     answer:
-      'A plataforma será definida e comunicada antes do lançamento. O foco é em simplicidade e qualidade da experiência, não em mais uma ferramenta complicada.',
+      'A plataforma será definida e comunicada antes da abertura. O foco é em simplicidade e qualidade da experiência.',
   },
 ];

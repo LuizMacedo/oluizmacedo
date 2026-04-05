@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
@@ -21,16 +22,20 @@ export default function Home() {
           <div className="text-center">
             <Badge className="mb-6">Senior Product Manager @ Microsoft</Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
-              O próximo nível da sua carreira em Tech{' '}
-              <span className="text-accent">não depende de esforço, mas de intenção.</span>
+              Carreira em Tech exige mais do que execução.{' '}
+              <span className="text-accent">Exige direção.</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted leading-relaxed max-w-2xl mx-auto">
-              Aprenda o jogo silencioso das Big Techs com quem ajudou a criar as regras.
-              20 anos de experiência, 12 anos de Microsoft, direto do Texas.
+              Produto, senioridade e carreira internacional para profissionais
+              que querem crescer com mais clareza.
+            </p>
+            <p className="mt-4 text-sm text-muted/70 max-w-xl mx-auto">
+              Uma trajetória construída ao longo de 20 anos em tecnologia,
+              12 deles na Microsoft, entre produto, certificações e contextos globais.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button href="/mentoria" size="lg">
-                Conheça Os Intencionais
+                Conheça a mentoria
               </Button>
               <Button href="/#sobre" variant="secondary" size="lg">
                 Sobre mim
@@ -45,8 +50,8 @@ export default function Home() {
         <Container>
           <SectionHeader
             label="Para quem é"
-            title="Se você se identifica, estou falando com você"
-            description="Meu trabalho é voltado para profissionais de tech que estão prontos para o próximo nível — com intenção."
+            title="Profissionais de Tech em busca de mais clareza"
+            description="Meu trabalho é direcionado a quem leva a própria carreira a sério e quer tomar decisões com mais contexto."
           />
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
             {audiences.map((item, i) => (
@@ -70,7 +75,7 @@ export default function Home() {
           <SectionHeader
             label="Pilares"
             title="O que você encontra aqui"
-            description="Três áreas que guiam tudo o que eu faço — da mentoria ao conteúdo."
+            description="Quatro áreas que orientam a mentoria, a comunidade e o conteúdo."
           />
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {pillars.map((pillar, i) => (
@@ -90,15 +95,17 @@ export default function Home() {
       <section id="sobre" className="py-20 md:py-28 border-t border-border">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Photo placeholder */}
+            {/* Photo */}
             <div className="relative">
-              <div className="aspect-[4/5] rounded-2xl bg-gradient-to-br from-surface via-surface-hover to-surface border border-border flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-24 h-24 rounded-full bg-accent/10 border border-accent/20 flex items-center justify-center mx-auto mb-4">
-                    <span className="text-accent text-3xl font-bold">LM</span>
-                  </div>
-                  <p className="text-xs text-muted/60">Foto profissional em breve</p>
-                </div>
+              <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-border">
+                <Image
+                  src="/images/luiz-macedo.jpg"
+                  alt="Luiz Macedo — Senior Product Manager na Microsoft"
+                  width={560}
+                  height={700}
+                  className="w-full h-full object-cover"
+                  priority
+                />
               </div>
               {/* Decorative element */}
               <div className="absolute -bottom-4 -right-4 w-24 h-24 border border-accent/20 rounded-2xl -z-10" />
@@ -112,19 +119,20 @@ export default function Home() {
               </h2>
               <div className="mt-6 space-y-4 text-muted leading-relaxed">
                 <p>
-                  Senior Product Manager na Microsoft, vivendo no Texas, EUA.
-                  São 20 anos trabalhando com tecnologia e 12 anos na Microsoft,
-                  em contextos que vão de startups brasileiras a Big Tech global.
+                  Senior Product Manager na Microsoft, vivendo no Texas, EUA há quase 10 anos.
+                  São 20 anos trabalhando com tecnologia e 12 na Microsoft, em experiências
+                  que passam por engenharia, produto, certificações e contextos globais.
                 </p>
                 <p>
-                  Mestre em Product Management pela Capitol Technology University
-                  e co-criador da certificação AZ-400 da Microsoft. Acredito que
-                  crescimento profissional real vem de decisões intencionais — não
-                  de fórmulas mágicas ou motivação vazia.
+                  Tenho M.S. in Product Management pela Capitol Technology University e
+                  graduação em Sistemas de Informação. Participei da criação de certificações
+                  da Microsoft, incluindo a AZ-400, e de cursos no Microsoft Learn como
+                  AZ-2008, AZ-2010 e AZ-2001.
                 </p>
                 <p>
-                  Mentoro profissionais que querem parar de gerir o como e começar
-                  a gerir o porquê. Vida real, café e liberdade. Alta performance em 4h.
+                  Hoje uso essa experiência para compartilhar reflexões e orientar profissionais
+                  de Tech que querem crescer com mais clareza em produto, senioridade e carreira
+                  internacional.
                 </p>
               </div>
               <div className="mt-8 flex flex-wrap gap-3">
@@ -141,9 +149,8 @@ export default function Home() {
       <section id="programas" className="py-20 md:py-28 bg-surface/30 border-t border-border">
         <Container>
           <SectionHeader
-            label="Próximos passos"
-            title="Mentoria, comunidade e treinamentos"
-            description="Programas para profissionais que querem resultado, não mais conteúdo genérico."
+            label="Programas"
+            title="Formatos diferentes para momentos diferentes da carreira"
           />
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
             {products.map((product, i) => (
@@ -175,9 +182,9 @@ export default function Home() {
       {/* CTA Final */}
       <CTASection
         label="Lista de espera"
-        title="Quer entrar na lista de espera dos Intencionais?"
-        description="Receba novidades sobre mentoria, comunidade e treinamentos exclusivos. Sem spam, só o que importa."
-        buttonText="Quero entrar na lista de espera"
+        title="Quer receber novidades?"
+        description="Entre na lista de espera para saber sobre mentoria, comunidade e novos conteúdos."
+        buttonText="Entrar na lista de espera"
         buttonHref={siteConfig.links.tally.waitlist}
       />
     </>
@@ -187,58 +194,58 @@ export default function Home() {
 const audiences = [
   {
     icon: '◆',
-    title: 'PMs que estão estagnados no operacional',
+    title: 'Profissionais de produto que querem sair do operacional',
     description:
-      'Você entrega, mas sente que virou executor. Quer sair do ciclo de apagar incêndio e começar a influenciar estratégia de verdade.',
+      'Você entrega, mas sente que a evolução travou. Quer mais clareza sobre como passar da execução para a influência estratégica.',
   },
   {
     icon: '◆',
-    title: 'Profissionais de tech que miram Big Tech',
+    title: 'Profissionais de tecnologia avaliando transição para produto',
     description:
-      'Quer entrar ou crescer em empresas globais e precisa de orientação prática de quem vive isso há mais de uma década.',
+      'Vem de engenharia, design ou outra área e quer entender o que de fato muda ao migrar para Product Management.',
   },
   {
     icon: '◆',
-    title: 'Quem quer carreira internacional com pés no chão',
+    title: 'Quem busca carreira internacional',
     description:
-      'Não busca fórmula mágica. Quer um plano real para se posicionar no mercado global com clareza e estratégia.',
+      'Está avaliando oportunidades fora do Brasil ou em empresas globais e quer orientação de quem já passou por isso.',
   },
   {
     icon: '◆',
-    title: 'Profissionais que querem gerir o porquê, não o como',
+    title: 'Quem quer mais clareza sobre senioridade e direção',
     description:
-      'Está cansado de conteúdo genérico e quer mentoria direta, com visão sênior e experiência real de Big Tech.',
+      'Busca contexto sobre posicionamento, gestão de stakeholders e próximos passos para a carreira.',
   },
 ];
 
 const pillars = [
   {
     icon: '▣',
-    title: 'Produto & Estratégia',
-    description: 'Gestão de produto com visão sênior. Priorização, discovery, métricas e as decisões que movem o negócio.',
+    title: 'Produto e estratégia',
+    description: 'Gestão de produto com visão sênior: priorização, discovery, métricas e decisões de negócio.',
   },
   {
     icon: '◈',
-    title: 'Carreira Internacional',
-    description: 'Como construir, posicionar e avançar sua carreira em Big Tech e empresas globais — direto do Texas.',
+    title: 'Carreira internacional',
+    description: 'Posicionamento, preparação e contexto para quem quer trabalhar em empresas globais.',
   },
   {
     icon: '⬡',
-    title: 'Alta Performance',
-    description: 'Produtividade real, rotinas sustentáveis e mentalidade de resultado. Alta performance em 4h.',
+    title: 'Senioridade e influência',
+    description: 'Gestão de stakeholders, comunicação executiva e posicionamento profissional.',
   },
   {
     icon: '◇',
-    title: 'Senioridade & Influência',
-    description: 'Navegando na incerteza, gestão de stakeholders, comunicação executiva e alavancagem de carreira.',
+    title: 'Clareza e direção profissional',
+    description: 'Diagnóstico de carreira, tomada de decisão e planejamento de próximos passos.',
   },
 ];
 
 const credentials = [
   'Microsoft (12 anos)',
-  'MS em Product Management',
+  'M.S. in Product Management',
   'Co-criador AZ-400',
-  'Carreira Internacional',
+  'Sistemas de Informação',
   'Texas, EUA',
   '20 anos em Tech',
 ];
@@ -246,9 +253,9 @@ const credentials = [
 const products = [
   {
     badge: 'Mentoria',
-    title: 'Os Intencionais',
+    title: 'Mentoria',
     description:
-      'Mentoria 1:1 para profissionais que estão estagnados no operacional e querem parar de gerir o como e começar a gerir o porquê.',
+      'Acompanhamento para profissionais de Tech que querem mais clareza sobre produto, senioridade e carreira internacional.',
     href: '/mentoria',
     cta: 'Saiba mais',
     primary: true,
@@ -256,9 +263,9 @@ const products = [
   },
   {
     badge: 'Comunidade',
-    title: 'Intencionais',
+    title: 'Comunidade',
     description:
-      'Comunidade exclusiva para profissionais de tech que querem crescer com intenção, trocar com pares de alto nível e acelerar resultados.',
+      'Espaço para profissionais de Tech que valorizam boas conversas sobre carreira, produto e senioridade.',
     href: '/comunidade',
     cta: 'Conhecer a comunidade',
     primary: false,
@@ -266,9 +273,9 @@ const products = [
   },
   {
     badge: 'Em breve',
-    title: 'Treinamentos Estratégicos',
+    title: 'Treinamentos',
     description:
-      'Programas focados em Product Management, carreira internacional e alta performance. Direto ao ponto, sem enrolação.',
+      'Programas focados em temas específicos de produto, carreira e senioridade. Em desenvolvimento.',
     href: siteConfig.links.tally.waitlist,
     cta: 'Lista de espera',
     primary: false,

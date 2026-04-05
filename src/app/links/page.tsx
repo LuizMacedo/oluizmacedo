@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Links",
   description:
-    "Todos os links de Luiz Macedo — mentoria Os Intencionais, comunidade, redes sociais e contato.",
+    "Todos os links de Luiz Macedo — mentoria, comunidade, redes sociais e contato.",
 };
 
 export default function LinksPage() {
@@ -13,8 +13,12 @@ export default function LinksPage() {
     <div className="flex items-center justify-center px-4 pt-28 pb-16 md:pt-36 md:pb-20">
       <div className="w-full max-w-md mx-auto text-center">
         {/* Avatar */}
-        <div className="w-24 h-24 rounded-full bg-accent/10 border-2 border-accent/30 flex items-center justify-center mx-auto mb-4">
-          <span className="text-accent text-3xl font-bold">LM</span>
+        <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-accent/30 mx-auto mb-4">
+          <img
+            src="/images/luiz-macedo.jpg"
+            alt="Luiz Macedo"
+            className="w-full h-full object-cover"
+          />
         </div>
 
         {/* Name & Bio */}
@@ -22,7 +26,7 @@ export default function LinksPage() {
         <p className="mt-2 text-sm text-muted leading-relaxed">
           Senior Product Manager @ Microsoft.
           <br />
-          Produto, carreira internacional e alta performance.
+          Produto, senioridade e carreira internacional em Tech.
         </p>
 
         {/* Links */}
@@ -107,21 +111,21 @@ function LinkItem({
 
 const links = [
   {
-    label: "🎯 Mentoria Os Intencionais",
+    label: "Mentoria",
     href: "/mentoria",
     highlight: true,
   },
   {
-    label: "🤝 Comunidade Intencionais (em breve)",
+    label: "Comunidade (em breve)",
     href: "/comunidade",
   },
   {
-    label: "💼 LinkedIn",
+    label: "LinkedIn",
     href: "https://www.linkedin.com/in/luizfmacedo/",
     external: true,
   },
   {
-    label: "📸 Instagram @quasebomemtudo",
+    label: "Instagram — @quasebomemtudo",
     href: "https://instagram.com/quasebomemtudo",
     external: true,
   },

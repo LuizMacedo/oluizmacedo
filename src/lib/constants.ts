@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Luiz Macedo",
-  title: "Luiz Macedo — Produto, Carreira Internacional e Alta Performance",
+  title: "Luiz Macedo — Produto, Senioridade e Carreira Internacional em Tech",
   description:
-    "Senior Product Manager na Microsoft. Mentoria e comunidade para profissionais de tech que querem crescer com intenção, estratégia e resultado.",
+    "Luiz Macedo é Senior Product Manager na Microsoft. Compartilha reflexões, mentoria e comunidade para profissionais de Tech interessados em produto, senioridade e carreira internacional.",
   url: "https://oluizmacedo.com.br",
   email: "contato@oluizmacedo.com.br",
   links: {
@@ -19,16 +19,15 @@ export const siteConfig = {
 
 export const navigation = [
   { name: "Início", href: "/" },
-  { name: "Os Intencionais", href: "/mentoria" },
+  { name: "Mentoria", href: "/mentoria" },
   { name: "Comunidade", href: "/comunidade" },
   { name: "Contato", href: "/contato" },
 ];
 
 export const footerLinks = {
   principal: [
-    { name: "Os Intencionais", href: "/mentoria" },
+    { name: "Mentoria", href: "/mentoria" },
     { name: "Comunidade", href: "/comunidade" },
-    { name: "Treinamentos", href: "/#programas" },
     { name: "Contato", href: "/contato" },
     { name: "Links", href: "/links" },
   ],

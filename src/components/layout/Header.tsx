@@ -57,7 +57,7 @@ export function Header() {
               </Link>
             ))}
             <Button href="/mentoria" size="sm">
-              Os Intencionais
+              Mentoria
             </Button>
           </nav>
 
@@ -100,7 +100,7 @@ export function Header() {
             ))}
             <div className="pt-6">
               <Button href="/mentoria" size="lg" className="w-full">
-                Os Intencionais
+                Mentoria
               </Button>
             </div>
           </nav>

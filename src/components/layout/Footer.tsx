@@ -18,8 +18,8 @@ export function Footer() {
               {siteConfig.name}
             </Link>
             <p className="mt-4 text-muted leading-relaxed max-w-sm">
-              Produto, carreira internacional e alta performance.
-              Mentoria e comunidade para profissionais de tech que querem crescer com intenção.
+              Produto, senioridade e carreira internacional.
+              Mentoria e comunidade para profissionais de Tech que querem crescer com mais clareza.
             </p>
             <div className="flex items-center gap-4 mt-6">
               <a
@@ -92,7 +92,7 @@ export function Footer() {
             &copy; {currentYear} {siteConfig.name}. Todos os direitos reservados.
           </p>
           <p className="text-xs text-muted/60">
-            Feito com intenção e café.
+            Luiz Macedo — Produto, carreira e senioridade em Tech.
           </p>
         </div>
       </Container>
