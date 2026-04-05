@@ -84,12 +84,14 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="mt-16 pt-8 border-t border-border flex flex-col items-center gap-4">
           <p className="text-sm text-muted">
             &copy; {currentYear} {siteConfig.name}. Todos os direitos reservados.
           </p>
-          <p className="text-xs text-muted/60">
-            Luiz Macedo — Produto, carreira e senioridade em Tech.
+          <p className="text-xs text-muted/50 text-center max-w-xl leading-relaxed">
+            Este é um projeto pessoal. As opiniões e conteúdos aqui compartilhados são
+            de responsabilidade exclusiva de Luiz Macedo e não representam posições
+            oficiais de qualquer empregador.
           </p>
         </div>
       </Container>

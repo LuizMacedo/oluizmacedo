@@ -55,17 +55,17 @@ export default function ComunidadePage() {
             <p>
               Um grupo para profissionais de Tech que querem conversar sobre carreira
               com mais seriedade. Não é sobre quantidade de pessoas — é sobre a qualidade
-              das conversas, a profundidade das trocas e o comprometimento de quem participa.
+              das conversas e o comprometimento de quem participa.
             </p>
             <p>
-              Aqui você vai encontrar discussões sobre produto, senioridade, gestão de
-              stakeholders, carreira internacional e decisões profissionais — com contexto,
-              experiência prática e sem superficialidade.
+              Você vai encontrar discussões sobre produto, senioridade, gestão de
+              stakeholders, carreira internacional e decisões profissionais — com exemplos
+              reais, frameworks aplicáveis e perspectivas de quem já viveu essas situações.
             </p>
             <p>
               Facilitado por Luiz Macedo, Senior Product Manager na Microsoft com
-              20 anos em tecnologia e 12 na empresa, a comunidade combina conteúdos
-              selecionados, encontros periódicos e trocas entre profissionais.
+              20 anos em tecnologia, a comunidade combina conteúdos exclusivos,
+              encontros ao vivo e trocas diretas entre profissionais.
             </p>
           </div>
         </Container>
@@ -127,28 +127,28 @@ export default function ComunidadePage() {
 
 const features = [
   {
-    title: 'Discussões sobre carreira',
-    description: 'Conversas sobre produto, senioridade, posicionamento e decisões profissionais — com contexto e experiência.',
+    title: 'Discussões temáticas sobre carreira',
+    description: 'Threads sobre negociação de oferta, posicionamento com liderança, transição de área e decisões de carreira — com experiência prática, não teoria.',
   },
   {
-    title: 'Encontros periódicos',
-    description: 'Sessões ao vivo com temas relevantes e espaço para perguntas reais sobre carreira e produto.',
+    title: 'Encontros ao vivo mensais',
+    description: 'Sessões com temas definidos (ex: como conduzir uma 1:1 produtiva, priorização em produto, preparar-se para promoção) e espaço para perguntas diretas.',
   },
   {
-    title: 'Trocas entre profissionais',
-    description: 'Conexão com outros profissionais de Tech que também levam a carreira a sério e valorizam profundidade.',
+    title: 'Networking com profissionais sênior',
+    description: 'Conexão com PMs, engenheiros e líderes de empresas como Microsoft, Google e outras Big Techs que valorizam profundidade.',
   },
   {
-    title: 'Espaço para perguntas reais',
-    description: 'Um canal para discutir dúvidas concretas sobre gestão de stakeholders, transições e posicionamento.',
+    title: 'Revisão entre pares',
+    description: 'Espaço para compartilhar currículos, LinkedIn, apresentações e decisões de carreira para feedback honesto e construtivo.',
   },
   {
-    title: 'Conteúdos selecionados',
-    description: 'Reflexões, análises e materiais sobre produto, carreira internacional e senioridade.',
+    title: 'Conteúdos exclusivos',
+    description: 'Análises de caso, frameworks aplicados e reflexões sobre produto, senioridade e carreira internacional não publicados em outro lugar.',
   },
   {
-    title: 'Acompanhamento',
-    description: 'Um ambiente que contribui para a sua evolução profissional com consistência e seriedade.',
+    title: 'Acompanhamento consistente',
+    description: 'Um ambiente com ritmo e compromisso, não apenas mais um grupo silencioso. Participação ativa é incentivada e valorizada.',
   },
 ];
 

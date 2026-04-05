@@ -120,19 +120,21 @@ export default function Home() {
               <div className="mt-6 space-y-4 text-muted leading-relaxed">
                 <p>
                   Senior Product Manager na Microsoft, vivendo no Texas, EUA há quase 10 anos.
-                  São 20 anos trabalhando com tecnologia e 12 na Microsoft, em experiências
-                  que passam por engenharia, produto, certificações e contextos globais.
+                  São 20 anos trabalhando com tecnologia e 12 na Microsoft — uma trajetória
+                  que começou na engenharia, passou pela criação e ownership de conteúdo
+                  técnico em escala global, e evoluiu para gestão de produto.
                 </p>
                 <p>
                   Tenho M.S. in Product Management pela Capitol Technology University e
-                  graduação em Sistemas de Informação. Participei da criação de certificações
-                  da Microsoft, incluindo a AZ-400, e de cursos no Microsoft Learn como
-                  AZ-2008, AZ-2010 e AZ-2001.
+                  graduação em Sistemas de Informação. Fui Content Developer Owner
+                  responsável pela trilha de treinamento em DevOps na Microsoft,
+                  incluindo conteúdos no Microsoft Learn como AZ-2008, AZ-2010 e AZ-2001,
+                  e participei de iniciativas relacionadas a certificações como a AZ-400.
                 </p>
                 <p>
-                  Hoje uso essa experiência para compartilhar reflexões e orientar profissionais
-                  de Tech que querem crescer com mais clareza em produto, senioridade e carreira
-                  internacional.
+                  Hoje canalizo essa experiência para orientar profissionais de Tech que
+                  querem tomar decisões de carreira com mais contexto — em produto,
+                  senioridade e carreira internacional.
                 </p>
               </div>
               <div className="mt-8 flex flex-wrap gap-3">
@@ -181,9 +183,9 @@ export default function Home() {
 
       {/* CTA Final */}
       <CTASection
-        label="Lista de espera"
-        title="Quer receber novidades?"
-        description="Entre na lista de espera para saber sobre mentoria, comunidade e novos conteúdos."
+        label="Próximo passo"
+        title="Profissional de Tech com decisões importantes pela frente?"
+        description="Entre na lista de espera e receba acesso antecipado à mentoria, à comunidade e a novos conteúdos sobre produto, senioridade e carreira internacional."
         buttonText="Entrar na lista de espera"
         buttonHref={siteConfig.links.tally.waitlist}
       />
@@ -244,7 +246,7 @@ const pillars = [
 const credentials = [
   'Microsoft (12 anos)',
   'M.S. in Product Management',
-  'Co-criador AZ-400',
+  'Content Owner — DevOps Training',
   'Sistemas de Informação',
   'Texas, EUA',
   '20 anos em Tech',

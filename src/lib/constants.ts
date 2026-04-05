@@ -9,9 +9,9 @@ export const siteConfig = {
     instagram: "https://instagram.com/quasebomemtudo",
     linkedin: "https://www.linkedin.com/in/luizfmacedo/",
     tally: {
-      waitlist: "https://tally.so/r/PLACEHOLDER_WAITLIST",
-      mentoria: "https://tally.so/r/PLACEHOLDER_MENTORIA",
-      contato: "https://tally.so/r/PLACEHOLDER_CONTATO",
+      waitlist: "https://tally.so/r/GxDg8L",
+      mentoria: "https://tally.so/r/xXyoAd",
+      contato: "https://tally.so/r/MeYgok",
     },
   },
   ga4MeasurementId: process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID || "",

@@ -54,18 +54,18 @@ export default function MentoriaPage() {
           />
           <div className="mt-10 space-y-4 text-lg text-muted leading-relaxed">
             <p>
-              Você entrega, trabalha duro, mas sente que a evolução travou.
-              Não sabe se o que falta é habilidade técnica, posicionamento
-              ou visibilidade.
+              Você entrega resultados consistentes, mas a evolução profissional
+              travou. Não sabe se o que falta é habilidade técnica, posicionamento
+              político ou visibilidade na organização.
             </p>
             <p>
-              Consome conteúdo, assiste palestras, mas não consegue transformar
-              nada disso num plano claro. Ou pior: sabe o que quer, mas não tem
-              com quem validar as decisões que precisa tomar.
+              Consome conteúdo, participa de eventos, mas nada disso se traduz
+              num plano claro de próximos passos. Ou pior: sabe o que quer, mas
+              não tem interlocutor qualificado para validar as decisões que precisa tomar.
             </p>
             <p>
-              A mentoria existe para isso: trazer clareza, contexto e uma perspectiva
-              sênior para as decisões que realmente importam na sua carreira.
+              A mentoria existe para isso: trazer perspectiva sênior, contexto de
+              quem já viveu situações semelhantes e clareza para agir com mais confiança.
             </p>
           </div>
         </Container>
@@ -141,24 +141,26 @@ export default function MentoriaPage() {
             <div className="mt-6 space-y-4 text-muted leading-relaxed text-left max-w-2xl mx-auto">
               <p>
                 Sou Luiz Macedo, Senior Product Manager na Microsoft, vivendo no Texas, EUA
-                há quase 10 anos. São 20 anos trabalhando com tecnologia e 12 na Microsoft,
-                em experiências que passam por engenharia, produto, certificações e contextos globais.
+                há quase 10 anos. São 20 anos trabalhando com tecnologia e 12 na Microsoft —
+                uma trajetória que começou na engenharia, passou pela criação e ownership de
+                conteúdo técnico em escala global, e evoluiu para gestão de produto.
               </p>
               <p>
                 Tenho M.S. in Product Management pela Capitol Technology University e
-                graduação em Sistemas de Informação. Participei da criação de certificações
-                da Microsoft, incluindo a AZ-400.
+                graduação em Sistemas de Informação. Fui Content Developer Owner
+                responsável pela trilha de treinamento em DevOps na Microsoft
+                e participei de iniciativas relacionadas a certificações como a AZ-400.
               </p>
               <p>
-                Na mentoria, trago a perspectiva de quem já passou por muitas das situações
-                que os mentorados enfrentam hoje — com foco em clareza, contexto e decisões
-                profissionais concretas.
+                Na mentoria, trago a perspectiva de quem já navegou transições de área,
+                construiu posição em empresa global e tomou decisões de carreira com
+                informação limitada — com foco em clareza, contexto e ações concretas.
               </p>
             </div>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
               <Badge variant="muted">Microsoft (12 anos)</Badge>
               <Badge variant="muted">M.S. in Product Management</Badge>
-              <Badge variant="muted">Co-criador AZ-400</Badge>
+              <Badge variant="muted">Content Owner — DevOps Training</Badge>
               <Badge variant="muted">Texas, EUA</Badge>
             </div>
           </div>

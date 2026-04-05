@@ -40,27 +40,12 @@ export default function ContatoPage() {
                 Formulário de contato
               </h3>
               <p className="text-muted text-sm leading-relaxed max-w-md mx-auto mb-6">
-                O formulário de contato será integrado via Tally.
-                Por enquanto, use o botão abaixo para acessar o formulário externo.
+                Preencha o formulário abaixo com sua mensagem.
+                Responderei o mais breve possível.
               </p>
               <Button href={siteConfig.links.tally.contato} external>
                 Abrir formulário de contato
               </Button>
-
-              {/* 
-                INTEGRAÇÃO TALLY:
-                Para integrar o formulário inline, substitua este bloco por:
-                <iframe 
-                  data-tally-src="https://tally.so/embed/FORM_ID?alignLeft=1&hideTitle=1&transparentBackground=1"
-                  loading="lazy"
-                  width="100%"
-                  height="500"
-                  frameBorder="0"
-                  title="Formulário de contato"
-                />
-                E adicione o script do Tally no layout ou nesta página:
-                <Script src="https://tally.so/widgets/embed.js" />
-              */}
             </div>
           </div>
 

@@ -17,7 +17,7 @@ export default function PoliticaDePrivacidadePage() {
           Política de Privacidade
         </h1>
         <p className="mt-4 text-sm text-muted">
-          Última atualização: junho de 2025
+          Última atualização: abril de 2026
         </p>
 
         <div className="mt-10 prose-custom space-y-8">
