@@ -138,11 +138,12 @@ export default function Home() {
                 </p>
                 <p>
                   Tenho M.S. in Product Management pela Capitol Technology
-                  University e graduação em Sistemas de Informação. Fui Content
-                  Developer Owner responsável pela trilha de treinamento em
-                  DevOps na Microsoft, incluindo conteúdos no Microsoft Learn
-                  como AZ-2008, AZ-2010 e AZ-2001, e participei de iniciativas
-                  relacionadas a certificações como a AZ-400.
+                  University e graduação em Sistemas de Informação pela
+                  Universidade Positivo. Fui Content Developer responsável pela
+                  trilha de treinamento em DevOps na Microsoft, incluindo
+                  conteúdos no Microsoft Learn como AZ-400, AZ-2008, AZ-2010 e
+                  AZ-2001, e participei de iniciativas relacionadas a
+                  certificações como a AZ-400.
                 </p>
                 <p>
                   Hoje canalizo essa experiência para orientar profissionais de

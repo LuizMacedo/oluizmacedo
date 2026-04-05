@@ -160,18 +160,18 @@ export default function MentoriaPage() {
             </h2>
             <div className="mt-6 space-y-4 text-muted leading-relaxed text-left max-w-2xl mx-auto">
               <p>
-                Sou Luiz Macedo, Senior Product Manager na Microsoft, vivendo no
-                Texas, EUA há quase 10 anos. São 20 anos trabalhando com
+                Sou o Luiz Macedo, Senior Product Manager na Microsoft, vivendo
+                no Texas, EUA há quase 10 anos. São 20 anos trabalhando com
                 tecnologia e 12 na Microsoft — uma trajetória que começou na
                 engenharia, passou pela criação e ownership de conteúdo técnico
                 em escala global, e evoluiu para gestão de produto.
               </p>
               <p>
                 Tenho M.S. in Product Management pela Capitol Technology
-                University e graduação em Sistemas de Informação. Fui Content
-                Developer Owner responsável pela trilha de treinamento em DevOps
-                na Microsoft e participei de iniciativas relacionadas a
-                certificações como a AZ-400.
+                University e graduação em Sistemas de Informação pela
+                Universidade Positivo. Fui Content Developer responsável pela
+                trilha de treinamento em DevOps na Microsoft e participei de
+                iniciativas relacionadas a certificações como a AZ-400.
               </p>
               <p>
                 Na mentoria, trago a perspectiva de quem já navegou transições

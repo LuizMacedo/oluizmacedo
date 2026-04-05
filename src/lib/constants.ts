@@ -21,6 +21,7 @@ export const navigation = [
   { name: "Início", href: "/" },
   { name: "Mentoria", href: "/mentoria" },
   { name: "Comunidade", href: "/comunidade" },
+  { name: "Programas", href: "/#programas" },
   { name: "Contato", href: "/contato" },
 ];
 
@@ -28,6 +29,7 @@ export const footerLinks = {
   principal: [
     { name: "Mentoria", href: "/mentoria" },
     { name: "Comunidade", href: "/comunidade" },
+    { name: "Programas", href: "/#programas" },
     { name: "Contato", href: "/contato" },
     { name: "Links", href: "/links" },
   ],
