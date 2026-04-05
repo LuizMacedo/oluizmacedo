@@ -17,7 +17,7 @@ export default function TermosDeUsoPage() {
           Termos de Uso
         </h1>
         <p className="mt-4 text-sm text-muted">
-          Última atualização: abril de 2026
+          Última atualização: junho de 2025
         </p>
 
         <div className="mt-10 space-y-8">

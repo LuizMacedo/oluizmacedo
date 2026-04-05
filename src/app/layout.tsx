@@ -70,6 +70,27 @@ export default function RootLayout({
     >
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Person',
+              name: 'Luiz Macedo',
+              url: siteConfig.url,
+              jobTitle: 'Senior Product Manager',
+              worksFor: {
+                '@type': 'Organization',
+                name: 'Microsoft',
+              },
+              sameAs: [
+                siteConfig.links.linkedin,
+                siteConfig.links.instagram,
+              ],
+              description: siteConfig.description,
+            }),
+          }}
+        />
       </head>
       <body className="min-h-full flex flex-col">
         <GoogleAnalytics />
