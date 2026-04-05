@@ -1,5 +1,5 @@
-import Script from 'next/script';
-import { siteConfig } from '@/lib/constants';
+import Script from "next/script";
+import { siteConfig } from "@/lib/constants";
 
 export function GoogleAnalytics() {
   const measurementId = siteConfig.ga4MeasurementId;

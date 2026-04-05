@@ -2,7 +2,7 @@ interface SectionHeaderProps {
   label?: string;
   title: string;
   description?: string;
-  align?: 'left' | 'center';
+  align?: "left" | "center";
   className?: string;
 }
 
@@ -10,10 +10,10 @@ export function SectionHeader({
   label,
   title,
   description,
-  align = 'center',
-  className = '',
+  align = "center",
+  className = "",
 }: SectionHeaderProps) {
-  const alignment = align === 'center' ? 'text-center mx-auto' : 'text-left';
+  const alignment = align === "center" ? "text-center mx-auto" : "text-left";
 
   return (
     <div className={`max-w-3xl ${alignment} ${className}`}>

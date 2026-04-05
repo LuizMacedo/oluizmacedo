@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useState, useId } from 'react';
+import { useState, useId } from "react";
 
 interface FAQItem {
   question: string;
@@ -12,7 +12,7 @@ interface FAQProps {
   className?: string;
 }
 
-export function FAQ({ items, className = '' }: FAQProps) {
+export function FAQ({ items, className = "" }: FAQProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const baseId = useId();
 
@@ -41,7 +41,7 @@ export function FAQ({ items, className = '' }: FAQProps) {
               </span>
               <svg
                 className={`w-5 h-5 text-accent shrink-0 transition-transform duration-200 ${
-                  isOpen ? 'rotate-180' : ''
+                  isOpen ? "rotate-180" : ""
                 }`}
                 fill="none"
                 viewBox="0 0 24 24"
@@ -49,7 +49,11 @@ export function FAQ({ items, className = '' }: FAQProps) {
                 strokeWidth={2}
                 aria-hidden="true"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
               </svg>
             </button>
             <div
@@ -58,7 +62,7 @@ export function FAQ({ items, className = '' }: FAQProps) {
               aria-labelledby={triggerId}
               hidden={!isOpen}
               className={`overflow-hidden transition-all duration-300 ${
-                isOpen ? 'max-h-[32rem] opacity-100' : 'max-h-0 opacity-0'
+                isOpen ? "max-h-[32rem] opacity-100" : "max-h-0 opacity-0"
               }`}
             >
               <p className="px-5 md:px-6 pb-5 md:pb-6 text-muted leading-relaxed">

@@ -1,19 +1,19 @@
-import type { Metadata } from 'next';
-import Image from 'next/image';
-import { Container } from '@/components/ui/Container';
-import { Button } from '@/components/ui/Button';
-import { Card } from '@/components/ui/Card';
-import { Badge } from '@/components/ui/Badge';
-import { SectionHeader } from '@/components/ui/SectionHeader';
-import { FAQ } from '@/components/sections/FAQ';
-import { CTASection } from '@/components/sections/CTASection';
-import { ForNotFor } from '@/components/sections/ForNotFor';
-import { siteConfig } from '@/lib/constants';
+import type { Metadata } from "next";
+import Image from "next/image";
+import { Container } from "@/components/ui/Container";
+import { Button } from "@/components/ui/Button";
+import { Card } from "@/components/ui/Card";
+import { Badge } from "@/components/ui/Badge";
+import { SectionHeader } from "@/components/ui/SectionHeader";
+import { FAQ } from "@/components/sections/FAQ";
+import { CTASection } from "@/components/sections/CTASection";
+import { ForNotFor } from "@/components/sections/ForNotFor";
+import { siteConfig } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: 'Mentoria — Luiz Macedo',
+  title: "Mentoria — Luiz Macedo",
   description:
-    'Mentoria para profissionais de Tech que buscam mais clareza sobre produto, senioridade e carreira internacional.',
+    "Mentoria para profissionais de Tech que buscam mais clareza sobre produto, senioridade e carreira internacional.",
 };
 
 export default function MentoriaPage() {
@@ -28,12 +28,14 @@ export default function MentoriaPage() {
           <div className="text-center">
             <Badge className="mb-6">Mentoria</Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
-              Mentoria para profissionais de Tech que buscam mais{' '}
-              <span className="text-accent">clareza sobre os próximos passos da carreira.</span>
+              Mentoria para profissionais de Tech que buscam mais{" "}
+              <span className="text-accent">
+                clareza sobre os próximos passos da carreira.
+              </span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted leading-relaxed max-w-2xl mx-auto">
-              Um programa de mentoria com acompanhamento para quem quer tomar decisões
-              profissionais com mais contexto, profundidade e direção.
+              Um programa de mentoria com acompanhamento para quem quer tomar
+              decisões profissionais com mais contexto, profundidade e direção.
             </p>
             <div className="mt-10">
               <Button href={siteConfig.links.tally.mentoria} external size="lg">
@@ -55,17 +57,20 @@ export default function MentoriaPage() {
           <div className="mt-10 space-y-4 text-lg text-muted leading-relaxed">
             <p>
               Você entrega resultados consistentes, mas a evolução profissional
-              travou. Não sabe se o que falta é habilidade técnica, posicionamento
-              político ou visibilidade na organização.
+              travou. Não sabe se o que falta é habilidade técnica,
+              posicionamento dentro da organização ou visibilidade com a
+              liderança.
             </p>
             <p>
               Consome conteúdo, participa de eventos, mas nada disso se traduz
               num plano claro de próximos passos. Ou pior: sabe o que quer, mas
-              não tem interlocutor qualificado para validar as decisões que precisa tomar.
+              não tem interlocutor qualificado para validar as decisões que
+              precisa tomar.
             </p>
             <p>
-              A mentoria existe para isso: trazer perspectiva sênior, contexto de
-              quem já viveu situações semelhantes e clareza para agir com mais confiança.
+              A mentoria existe para isso: trazer perspectiva sênior, contexto
+              de quem já viveu situações semelhantes e clareza para agir com
+              mais confiança.
             </p>
           </div>
         </Container>
@@ -83,10 +88,16 @@ export default function MentoriaPage() {
             {methodSteps.map((item, i) => (
               <Card key={i}>
                 <div className="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-accent font-bold">{String(i + 1).padStart(2, '0')}</span>
+                  <span className="text-accent font-bold">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
                 </div>
-                <h3 className="text-lg font-semibold text-foreground">{item.title}</h3>
-                <p className="mt-2 text-sm text-muted leading-relaxed">{item.description}</p>
+                <h3 className="text-lg font-semibold text-foreground">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm text-muted leading-relaxed">
+                  {item.description}
+                </p>
               </Card>
             ))}
           </div>
@@ -110,13 +121,20 @@ export default function MentoriaPage() {
           />
           <div className="mt-10 space-y-6">
             {whatYouGet.map((item, i) => (
-              <div key={i} className="flex items-start gap-5 p-5 rounded-xl border border-border bg-surface/50">
+              <div
+                key={i}
+                className="flex items-start gap-5 p-5 rounded-xl border border-border bg-surface/50"
+              >
                 <span className="text-accent font-mono text-sm font-bold mt-0.5">
-                  {String(i + 1).padStart(2, '0')}
+                  {String(i + 1).padStart(2, "0")}
                 </span>
                 <div>
-                  <h4 className="font-semibold text-foreground">{item.title}</h4>
-                  <p className="mt-1 text-sm text-muted leading-relaxed">{item.description}</p>
+                  <h4 className="font-semibold text-foreground">
+                    {item.title}
+                  </h4>
+                  <p className="mt-1 text-sm text-muted leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -137,24 +155,29 @@ export default function MentoriaPage() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Sobre o mentor</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+              Sobre o mentor
+            </h2>
             <div className="mt-6 space-y-4 text-muted leading-relaxed text-left max-w-2xl mx-auto">
               <p>
-                Sou Luiz Macedo, Senior Product Manager na Microsoft, vivendo no Texas, EUA
-                há quase 10 anos. São 20 anos trabalhando com tecnologia e 12 na Microsoft —
-                uma trajetória que começou na engenharia, passou pela criação e ownership de
-                conteúdo técnico em escala global, e evoluiu para gestão de produto.
+                Sou Luiz Macedo, Senior Product Manager na Microsoft, vivendo no
+                Texas, EUA há quase 10 anos. São 20 anos trabalhando com
+                tecnologia e 12 na Microsoft — uma trajetória que começou na
+                engenharia, passou pela criação e ownership de conteúdo técnico
+                em escala global, e evoluiu para gestão de produto.
               </p>
               <p>
-                Tenho M.S. in Product Management pela Capitol Technology University e
-                graduação em Sistemas de Informação. Fui Content Developer Owner
-                responsável pela trilha de treinamento em DevOps na Microsoft
-                e participei de iniciativas relacionadas a certificações como a AZ-400.
+                Tenho M.S. in Product Management pela Capitol Technology
+                University e graduação em Sistemas de Informação. Fui Content
+                Developer Owner responsável pela trilha de treinamento em DevOps
+                na Microsoft e participei de iniciativas relacionadas a
+                certificações como a AZ-400.
               </p>
               <p>
-                Na mentoria, trago a perspectiva de quem já navegou transições de área,
-                construiu posição em empresa global e tomou decisões de carreira com
-                informação limitada — com foco em clareza, contexto e ações concretas.
+                Na mentoria, trago a perspectiva de quem já navegou transições
+                de área, construiu posição em empresa global e tomou decisões de
+                carreira com informação limitada — com foco em clareza, contexto
+                e ações concretas.
               </p>
             </div>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
@@ -170,10 +193,7 @@ export default function MentoriaPage() {
       {/* FAQ */}
       <section className="py-20 md:py-28 bg-surface/30 border-t border-border">
         <Container size="narrow">
-          <SectionHeader
-            label="Dúvidas"
-            title="Perguntas frequentes"
-          />
+          <SectionHeader label="Dúvidas" title="Perguntas frequentes" />
           <div className="mt-12">
             <FAQ items={faqItems} />
           </div>
@@ -194,98 +214,109 @@ export default function MentoriaPage() {
 
 const methodSteps = [
   {
-    title: 'Diagnóstico do momento atual',
-    description: 'Entender onde você está profissionalmente, quais são os desafios reais e o que faz sentido priorizar agora.',
+    title: "Diagnóstico do momento atual",
+    description:
+      "Entender onde você está profissionalmente, quais são os desafios reais e o que faz sentido priorizar agora.",
   },
   {
-    title: 'Clareza sobre objetivo e contexto',
-    description: 'Definir com objetividade o que você quer alcançar e quais são as variáveis relevantes para isso.',
+    title: "Clareza sobre objetivo e contexto",
+    description:
+      "Definir com objetividade o que você quer alcançar e quais são as variáveis relevantes para isso.",
   },
   {
-    title: 'Decisões de posicionamento',
-    description: 'Como se posicionar com credibilidade dentro e fora da empresa, de forma consistente e alinhada ao seu perfil.',
+    title: "Decisões de posicionamento",
+    description:
+      "Como se posicionar com credibilidade dentro e fora da empresa, de forma consistente e alinhada ao seu perfil.",
   },
   {
-    title: 'Gestão de stakeholders e comunicação',
-    description: 'Trabalhar a comunicação com liderança, pares e times — da 1:1 à apresentação executiva.',
+    title: "Gestão de stakeholders e comunicação",
+    description:
+      "Trabalhar a comunicação com liderança, pares e times — da 1:1 à apresentação executiva.",
   },
   {
-    title: 'Plano de desenvolvimento',
-    description: 'Construir um plano realista de crescimento com metas, prioridades e prazos definidos.',
+    title: "Plano de desenvolvimento",
+    description:
+      "Construir um plano realista de crescimento com metas, prioridades e prazos definidos.",
   },
   {
-    title: 'Acompanhamento e revisão',
-    description: 'Revisões periódicas para ajustar o plano conforme a realidade muda — com contexto e feedback direto.',
+    title: "Acompanhamento e revisão",
+    description:
+      "Revisões periódicas para ajustar o plano conforme a realidade muda — com contexto e feedback direto.",
   },
 ];
 
 const forWho = [
-  'Profissionais de produto que querem sair do operacional e ganhar mais clareza sobre posicionamento',
-  'Profissionais de Tech avaliando transição para Product Management',
-  'Quem está considerando oportunidades em empresas globais ou carreira internacional',
-  'Profissionais que querem feedback sênior, direto e prático sobre decisões de carreira',
-  'Quem busca contexto de quem já viveu situações parecidas em empresa grande',
+  "Profissionais de produto que querem sair do operacional e ganhar mais clareza sobre posicionamento",
+  "Profissionais de Tech avaliando transição para Product Management",
+  "Quem está considerando oportunidades em empresas globais ou carreira internacional",
+  "Profissionais que querem feedback sênior, direto e prático sobre decisões de carreira",
+  "Quem busca contexto de quem já viveu situações parecidas em empresa grande",
 ];
 
 const notForWho = [
-  'Quem busca fórmula pronta ou resultado sem comprometimento',
-  'Profissionais que não têm disponibilidade para se dedicar ao processo',
-  'Quem espera coaching motivacional ou conselhos genéricos',
-  'Pessoas que esperam que o mentor tome as decisões por elas',
+  "Quem busca fórmula pronta ou resultado sem comprometimento",
+  "Profissionais que não têm disponibilidade para se dedicar ao processo",
+  "Quem espera coaching motivacional ou conselhos genéricos",
+  "Pessoas que esperam que o mentor tome as decisões por elas",
 ];
 
 const whatYouGet = [
   {
-    title: 'Sessões por vídeo',
-    description: 'Encontros individuais com foco no que é relevante para o seu momento. Sem turma, sem conteúdo genérico.',
+    title: "Sessões por vídeo",
+    description:
+      "Encontros individuais com foco no que é relevante para o seu momento. Sem turma, sem conteúdo genérico.",
   },
   {
-    title: 'Diagnóstico de carreira',
-    description: 'Análise honesta de onde você está e mapeamento das oportunidades e pontos de atenção.',
+    title: "Diagnóstico de carreira",
+    description:
+      "Análise honesta de onde você está e mapeamento das oportunidades e pontos de atenção.",
   },
   {
-    title: 'Plano de ação',
-    description: 'Definição de prioridades, próximos passos e metas realistas com prazos claros.',
+    title: "Plano de ação",
+    description:
+      "Definição de prioridades, próximos passos e metas realistas com prazos claros.",
   },
   {
-    title: 'Feedback direto',
-    description: 'Revisão de currículo, LinkedIn, posicionamento profissional e decisões de carreira.',
+    title: "Feedback direto",
+    description:
+      "Revisão de currículo, LinkedIn, posicionamento profissional e decisões de carreira.",
   },
   {
-    title: 'Suporte entre sessões',
-    description: 'Canal assíncrono para dúvidas pontuais e acompanhamento entre encontros.',
+    title: "Suporte entre sessões",
+    description:
+      "Canal assíncrono para dúvidas pontuais e acompanhamento entre encontros.",
   },
 ];
 
 const faqItems = [
   {
-    question: 'Quanto custa a mentoria?',
+    question: "Quanto custa a mentoria?",
     answer:
-      'O valor é compartilhado após uma primeira análise de perfil e alinhamento de expectativas. Como a proposta ainda é personalizada, prefiro primeiro entender se há fit.',
+      "O valor é compartilhado após uma primeira análise de perfil e alinhamento de expectativas. Como a proposta ainda é personalizada, prefiro primeiro entender se há fit.",
   },
   {
-    question: 'Qual a duração e frequência das sessões?',
+    question: "Qual a duração e frequência das sessões?",
     answer:
-      'As sessões costumam ser quinzenais ou mensais, com duração de 45 a 60 minutos. A frequência é definida juntos, com base no que faz sentido para o seu momento.',
+      "As sessões costumam ser quinzenais ou mensais, com duração de 45 a 60 minutos. A frequência é definida juntos, com base no que faz sentido para o seu momento.",
   },
   {
-    question: 'Preciso ser Product Manager para participar?',
+    question: "Preciso ser Product Manager para participar?",
     answer:
-      'Não necessariamente. A mentoria é voltada para profissionais de Tech com interesse em produto, carreira internacional ou senioridade. Se você está avaliando uma transição para produto, também faz sentido.',
+      "Não necessariamente. A mentoria é voltada para profissionais de Tech com interesse em produto, carreira internacional ou senioridade. Se você está avaliando uma transição para produto, também faz sentido.",
   },
   {
-    question: 'A mentoria é em português ou inglês?',
+    question: "A mentoria é em português ou inglês?",
     answer:
-      'As sessões são em português. Se você precisar de apoio com materiais em inglês (currículo, LinkedIn, preparação para entrevista), também posso ajudar.',
+      "As sessões são em português. Se você precisar de apoio com materiais em inglês (currículo, LinkedIn, preparação para entrevista), também posso ajudar.",
   },
   {
-    question: 'Como funciona o processo de aplicação?',
+    question: "Como funciona o processo de aplicação?",
     answer:
-      'Você preenche um formulário com algumas informações sobre o seu momento profissional. Eu analiso e, se houver fit, entro em contato para uma conversa inicial antes de começarmos.',
+      "Você preenche um formulário com algumas informações sobre o seu momento profissional. Eu analiso e, se houver fit, entro em contato para uma conversa inicial antes de começarmos.",
   },
   {
-    question: 'O que diferencia essa mentoria?',
+    question: "O que diferencia essa mentoria?",
     answer:
-      'Experiência prática de 20 anos em tecnologia, 12 na Microsoft. O foco é em clareza, contexto e decisões profissionais — não em motivação ou conteúdo genérico.',
+      "Experiência prática de 20 anos em tecnologia, 12 na Microsoft. O foco é em clareza, contexto e decisões profissionais — não em motivação ou conteúdo genérico.",
   },
 ];

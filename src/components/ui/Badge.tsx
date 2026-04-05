@@ -1,13 +1,17 @@
 interface BadgeProps {
   children: React.ReactNode;
-  variant?: 'accent' | 'muted';
+  variant?: "accent" | "muted";
   className?: string;
 }
 
-export function Badge({ children, variant = 'accent', className = '' }: BadgeProps) {
+export function Badge({
+  children,
+  variant = "accent",
+  className = "",
+}: BadgeProps) {
   const variants = {
-    accent: 'bg-accent/10 text-accent border-accent/20',
-    muted: 'bg-surface text-muted border-border',
+    accent: "bg-accent/10 text-accent border-accent/20",
+    muted: "bg-surface text-muted border-border",
   };
 
   return (

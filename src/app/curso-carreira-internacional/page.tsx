@@ -1,15 +1,15 @@
-import type { Metadata } from 'next';
-import { Container } from '@/components/ui/Container';
-import { Button } from '@/components/ui/Button';
-import { Badge } from '@/components/ui/Badge';
-import { Card } from '@/components/ui/Card';
-import { CTASection } from '@/components/sections/CTASection';
-import { siteConfig } from '@/lib/constants';
+import type { Metadata } from "next";
+import { Container } from "@/components/ui/Container";
+import { Button } from "@/components/ui/Button";
+import { Badge } from "@/components/ui/Badge";
+import { Card } from "@/components/ui/Card";
+import { CTASection } from "@/components/sections/CTASection";
+import { siteConfig } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: 'Curso: Carreira Internacional — Em preparação',
+  title: "Curso: Carreira Internacional — Em preparação",
   description:
-    'Passo a passo para profissionais de tecnologia que querem trabalhar fora ou em empresas globais. Em breve, por Luiz Macedo.',
+    "Passo a passo para profissionais de tecnologia que querem trabalhar fora ou em empresas globais. Em breve, por Luiz Macedo.",
 };
 
 export default function CursoCarreiraPage() {
@@ -24,8 +24,7 @@ export default function CursoCarreiraPage() {
           <div className="text-center">
             <Badge className="mb-6">Em preparação</Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
-              Curso:{' '}
-              <span className="text-accent">Carreira Internacional</span>
+              Curso: <span className="text-accent">Carreira Internacional</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted leading-relaxed max-w-2xl mx-auto">
               Um guia prático para profissionais de tecnologia que querem
@@ -46,15 +45,17 @@ export default function CursoCarreiraPage() {
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-accent text-sm font-semibold tracking-widest uppercase">O que esperar</span>
+              <span className="text-accent text-sm font-semibold tracking-widest uppercase">
+                O que esperar
+              </span>
               <h2 className="mt-4 text-3xl md:text-4xl font-bold tracking-tight leading-tight">
                 Carreira internacional não é sorte. É estratégia.
               </h2>
               <div className="mt-6 space-y-4 text-muted leading-relaxed">
                 <p>
                   Este curso vai cobrir o caminho real para quem quer construir
-                  carreira fora do Brasil — desde o posicionamento inicial até
-                  a preparação para processos seletivos em empresas globais.
+                  carreira fora do Brasil — desde o posicionamento inicial até a
+                  preparação para processos seletivos em empresas globais.
                 </p>
                 <p>
                   Baseado na minha experiência saindo do Brasil e construindo
@@ -71,9 +72,11 @@ export default function CursoCarreiraPage() {
               {topics.map((topic, i) => (
                 <Card key={i} className="p-5">
                   <span className="text-accent text-xs font-mono font-bold">
-                    {String(i + 1).padStart(2, '0')}
+                    {String(i + 1).padStart(2, "0")}
                   </span>
-                  <h3 className="mt-2 text-sm font-semibold text-foreground">{topic}</h3>
+                  <h3 className="mt-2 text-sm font-semibold text-foreground">
+                    {topic}
+                  </h3>
                 </Card>
               ))}
             </div>
@@ -118,12 +121,12 @@ export default function CursoCarreiraPage() {
 }
 
 const topics = [
-  'Posicionamento internacional',
-  'Currículo & LinkedIn global',
-  'Preparação para entrevistas',
-  'Visto e relocação',
-  'Networking estratégico',
-  'Cultura corporativa global',
-  'Negociação de oferta',
-  'Adaptação e crescimento',
+  "Posicionamento internacional",
+  "Currículo & LinkedIn global",
+  "Preparação para entrevistas",
+  "Visto e relocação",
+  "Networking estratégico",
+  "Cultura corporativa global",
+  "Negociação de oferta",
+  "Adaptação e crescimento",
 ];

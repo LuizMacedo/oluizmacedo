@@ -1,15 +1,15 @@
-import type { Metadata } from 'next';
-import { Container } from '@/components/ui/Container';
-import { Button } from '@/components/ui/Button';
-import { Badge } from '@/components/ui/Badge';
-import { Card } from '@/components/ui/Card';
-import { CTASection } from '@/components/sections/CTASection';
-import { siteConfig } from '@/lib/constants';
+import type { Metadata } from "next";
+import { Container } from "@/components/ui/Container";
+import { Button } from "@/components/ui/Button";
+import { Badge } from "@/components/ui/Badge";
+import { Card } from "@/components/ui/Card";
+import { CTASection } from "@/components/sections/CTASection";
+import { siteConfig } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: 'Curso: Product Manager — Em preparação',
+  title: "Curso: Product Manager — Em preparação",
   description:
-    'Treinamento completo de Product Management com visão sênior e prática de Big Tech. Em breve, por Luiz Macedo.',
+    "Treinamento completo de Product Management com visão sênior e prática de Big Tech. Em breve, por Luiz Macedo.",
 };
 
 export default function CursoPMPage() {
@@ -24,13 +24,12 @@ export default function CursoPMPage() {
           <div className="text-center">
             <Badge className="mb-6">Em preparação</Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
-              Curso:{' '}
-              <span className="text-accent">Product Manager</span>
+              Curso: <span className="text-accent">Product Manager</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-muted leading-relaxed max-w-2xl mx-auto">
-              Treinamento completo para quem quer dominar Product Management
-              com a visão de quem trabalha em Big Tech — direto ao ponto,
-              sem enrolação.
+              Treinamento completo para quem quer dominar Product Management com
+              a visão de quem trabalha em Big Tech — direto ao ponto, sem
+              enrolação.
             </p>
             <div className="mt-10">
               <Button href={siteConfig.links.tally.waitlist} external size="lg">
@@ -46,19 +45,23 @@ export default function CursoPMPage() {
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-accent text-sm font-semibold tracking-widest uppercase">O que esperar</span>
+              <span className="text-accent text-sm font-semibold tracking-widest uppercase">
+                O que esperar
+              </span>
               <h2 className="mt-4 text-3xl md:text-4xl font-bold tracking-tight leading-tight">
                 Um curso pensado para quem quer resultado, não certificado
               </h2>
               <div className="mt-6 space-y-4 text-muted leading-relaxed">
                 <p>
-                  Este treinamento está sendo desenvolvido com base na minha experiência
-                  real como Senior PM na Microsoft e em outras empresas de tecnologia.
+                  Este treinamento está sendo desenvolvido com base na minha
+                  experiência real como Senior PM na Microsoft e em outras
+                  empresas de tecnologia.
                 </p>
                 <p>
-                  O foco será em habilidades práticas que realmente fazem diferença no dia
-                  a dia: discovery, priorização, métricas, stakeholder management,
-                  comunicação executiva e visão estratégica de produto.
+                  O foco será em habilidades práticas que realmente fazem
+                  diferença no dia a dia: discovery, priorização, métricas,
+                  stakeholder management, comunicação executiva e visão
+                  estratégica de produto.
                 </p>
                 <p>
                   Nada de conteúdo reciclado. Cada módulo será construído com
@@ -70,9 +73,11 @@ export default function CursoPMPage() {
               {topics.map((topic, i) => (
                 <Card key={i} className="p-5">
                   <span className="text-accent text-xs font-mono font-bold">
-                    {String(i + 1).padStart(2, '0')}
+                    {String(i + 1).padStart(2, "0")}
                   </span>
-                  <h3 className="mt-2 text-sm font-semibold text-foreground">{topic}</h3>
+                  <h3 className="mt-2 text-sm font-semibold text-foreground">
+                    {topic}
+                  </h3>
                 </Card>
               ))}
             </div>
@@ -92,8 +97,8 @@ export default function CursoPMPage() {
             </h2>
             <p className="mt-4 text-muted leading-relaxed max-w-xl mx-auto">
               Luiz Macedo é Senior Product Manager na Microsoft, com trajetória
-              em startups e Big Tech. O curso reflete experiência real, não teoria
-              de livro.
+              em startups e Big Tech. O curso reflete experiência real, não
+              teoria de livro.
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
               <Badge variant="muted">Microsoft</Badge>
@@ -117,12 +122,12 @@ export default function CursoPMPage() {
 }
 
 const topics = [
-  'Discovery & Validação',
-  'Priorização estratégica',
-  'Métricas que importam',
-  'Roadmap & Planning',
-  'Stakeholder Management',
-  'Comunicação executiva',
-  'Visão de produto',
-  'Crescimento na carreira',
+  "Discovery & Validação",
+  "Priorização estratégica",
+  "Métricas que importam",
+  "Roadmap & Planning",
+  "Stakeholder Management",
+  "Comunicação executiva",
+  "Visão de produto",
+  "Crescimento na carreira",
 ];

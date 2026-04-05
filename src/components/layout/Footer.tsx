@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import { siteConfig, footerLinks } from '@/lib/constants';
-import { Container } from '@/components/ui/Container';
-import { LinkedInIcon, InstagramIcon } from '@/components/icons/SocialIcons';
+import Link from "next/link";
+import { siteConfig, footerLinks } from "@/lib/constants";
+import { Container } from "@/components/ui/Container";
+import { LinkedInIcon, InstagramIcon } from "@/components/icons/SocialIcons";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -19,8 +19,9 @@ export function Footer() {
               {siteConfig.name}
             </Link>
             <p className="mt-4 text-muted leading-relaxed max-w-sm">
-              Produto, senioridade e carreira internacional.
-              Mentoria e comunidade para profissionais de Tech que querem crescer com mais clareza.
+              Produto, senioridade e carreira internacional. Mentoria e
+              comunidade para profissionais de Tech que querem crescer com mais
+              clareza.
             </p>
             <div className="flex items-center gap-4 mt-6">
               <a
@@ -86,12 +87,14 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-16 pt-8 border-t border-border flex flex-col items-center gap-4">
           <p className="text-sm text-muted">
-            &copy; {currentYear} {siteConfig.name}. Todos os direitos reservados.
+            &copy; {currentYear} {siteConfig.name}. Todos os direitos
+            reservados.
           </p>
           <p className="text-xs text-muted/50 text-center max-w-xl leading-relaxed">
-            Este é um projeto pessoal. As opiniões e conteúdos aqui compartilhados são
-            de responsabilidade exclusiva de Luiz Macedo e não representam posições
-            oficiais de qualquer empregador.
+            Este é um projeto pessoal. As opiniões e conteúdos aqui
+            compartilhados são de responsabilidade exclusiva de Luiz Macedo e
+            não representam posições oficiais da Microsoft ou de qualquer outro
+            empregador.
           </p>
         </div>
       </Container>

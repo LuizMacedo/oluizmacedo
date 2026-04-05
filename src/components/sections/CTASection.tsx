@@ -1,6 +1,6 @@
-import { siteConfig } from '@/lib/constants';
-import { Container } from '@/components/ui/Container';
-import { Button } from '@/components/ui/Button';
+import { siteConfig } from "@/lib/constants";
+import { Container } from "@/components/ui/Container";
+import { Button } from "@/components/ui/Button";
 
 interface CTASectionProps {
   label?: string;
@@ -15,9 +15,9 @@ export function CTASection({
   label,
   title,
   description,
-  buttonText = 'Entrar na lista de espera',
+  buttonText = "Entrar na lista de espera",
   buttonHref = siteConfig.links.tally.waitlist,
-  className = '',
+  className = "",
 }: CTASectionProps) {
   return (
     <section className={`py-20 md:py-28 ${className}`}>

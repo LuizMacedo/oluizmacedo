@@ -1,13 +1,17 @@
-import type { Metadata } from 'next';
-import { Container } from '@/components/ui/Container';
-import { Button } from '@/components/ui/Button';
-import { siteConfig } from '@/lib/constants';
-import { LinkedInIcon, InstagramIcon, MailIcon } from '@/components/icons/SocialIcons';
+import type { Metadata } from "next";
+import { Container } from "@/components/ui/Container";
+import { Button } from "@/components/ui/Button";
+import { siteConfig } from "@/lib/constants";
+import {
+  LinkedInIcon,
+  InstagramIcon,
+  MailIcon,
+} from "@/components/icons/SocialIcons";
 
 export const metadata: Metadata = {
-  title: 'Contato',
+  title: "Contato",
   description:
-    'Entre em contato com Luiz Macedo para parcerias, convites para eventos, ou qualquer outra questão profissional.',
+    "Entre em contato com Luiz Macedo para parcerias, convites para eventos, ou qualquer outra questão profissional.",
 };
 
 export default function ContatoPage() {
@@ -32,16 +36,26 @@ export default function ContatoPage() {
           <div className="mt-12">
             <div className="rounded-2xl border border-border bg-surface p-8 md:p-12 text-center">
               <div className="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center mx-auto mb-6">
-                <svg className="w-7 h-7 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                <svg
+                  className="w-7 h-7 text-accent"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  />
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">
                 Formulário de contato
               </h3>
               <p className="text-muted text-sm leading-relaxed max-w-md mx-auto mb-6">
-                Preencha o formulário abaixo com sua mensagem.
-                Responderei o mais breve possível.
+                Preencha o formul\u00e1rio com sua mensagem. Responderei o mais
+                breve poss\u00edvel.
               </p>
               <Button href={siteConfig.links.tally.contato} external>
                 Abrir formulário de contato
@@ -73,8 +87,12 @@ export default function ContatoPage() {
                 <LinkedInIcon className="w-5 h-5 text-accent" />
               </div>
               <div>
-                <p className="text-sm font-semibold text-foreground">LinkedIn</p>
-                <p className="text-xs text-muted">Conecte-se profissionalmente</p>
+                <p className="text-sm font-semibold text-foreground">
+                  LinkedIn
+                </p>
+                <p className="text-xs text-muted">
+                  Conecte-se profissionalmente
+                </p>
               </div>
             </a>
             <a
@@ -87,7 +105,9 @@ export default function ContatoPage() {
                 <InstagramIcon className="w-5 h-5 text-accent" />
               </div>
               <div>
-                <p className="text-sm font-semibold text-foreground">Instagram</p>
+                <p className="text-sm font-semibold text-foreground">
+                  Instagram
+                </p>
                 <p className="text-xs text-muted">Conteúdo e bastidores</p>
               </div>
             </a>
