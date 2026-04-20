@@ -16,6 +16,12 @@ variable "app_name" {
   default     = "swa-oluizmacedo"
 }
 
+variable "domain_name" {
+  description = "Domínio personalizado do site (zona DNS já deve existir no Azure DNS)."
+  type        = string
+  default     = "oluizmacedo.com.br"
+}
+
 variable "sku_tier" {
   description = "SKU do Static Web App. 'Free' para sites pessoais estáticos; 'Standard' para APIs e auth customizada."
   type        = string

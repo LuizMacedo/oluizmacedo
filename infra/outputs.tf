@@ -1,6 +1,16 @@
 output "hostname" {
-  description = "URL pública do Static Web App (produção)."
+  description = "URL padrão do Static Web App (azurestaticapps.net)."
   value       = "https://${azurerm_static_web_app.main.default_host_name}"
+}
+
+output "custom_domain_apex" {
+  description = "URL pública do site com domínio personalizado (apex)."
+  value       = "https://${var.domain_name}"
+}
+
+output "custom_domain_www" {
+  description = "URL pública do site com domínio personalizado (www)."
+  value       = "https://www.${var.domain_name}"
 }
 
 output "api_key" {
