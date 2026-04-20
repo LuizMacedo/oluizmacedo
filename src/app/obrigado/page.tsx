@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+import { siteConfig } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Obrigado",
@@ -11,7 +13,13 @@ export const metadata: Metadata = {
 
 export default function ObrigadoPage() {
   return (
-    <section className="pt-32 pb-20 md:pt-44 md:pb-28">
+    <>
+      {siteConfig.ga4MeasurementId && (
+        <Script id="ga-conversion" strategy="afterInteractive">
+          {`gtag('event', 'generate_lead', { event_category: 'engagement' });`}
+        </Script>
+      )}
+      <section className="pt-32 pb-20 md:pt-44 md:pb-28">
       <Container size="narrow">
         <div className="text-center">
           {/* Icon */}
@@ -50,5 +58,6 @@ export default function ObrigadoPage() {
         </div>
       </Container>
     </section>
+    </>
   );
 }

@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   title: "Mentoria — Luiz Macedo",
   description:
     "Mentoria para profissionais de Tech que buscam mais clareza sobre produto, senioridade e carreira internacional.",
+  openGraph: {
+    title: "Mentoria — Luiz Macedo",
+    description:
+      "Mentoria para profissionais de Tech que buscam mais clareza sobre produto, senioridade e carreira internacional.",
+  },
 };
 
 export default function MentoriaPage() {

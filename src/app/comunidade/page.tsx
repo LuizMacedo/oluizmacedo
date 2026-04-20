@@ -13,6 +13,11 @@ export const metadata: Metadata = {
   title: "Comunidade — Luiz Macedo",
   description:
     "Uma comunidade para profissionais de Tech que levam a carreira a sério. Produto, senioridade, carreira internacional e discussões práticas.",
+  openGraph: {
+    title: "Comunidade — Luiz Macedo",
+    description:
+      "Uma comunidade para profissionais de Tech que levam a carreira a sério. Produto, senioridade, carreira internacional e discussões práticas.",
+  },
 };
 
 export default function ComunidadePage() {

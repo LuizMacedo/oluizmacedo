@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "type-check": "tsc --noEmit",
+    "preview": "npx serve out",
+    "clean": "rm -rf .next out"
   },
   "dependencies": {
     "next": "16.2.2",
