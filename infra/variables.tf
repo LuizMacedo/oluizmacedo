@@ -1,7 +1,7 @@
 variable "location" {
-  description = "Região Azure onde o recurso será criado."
+  description = "Região Azure onde o recurso será criado. SWA requer: westus2, centralus, eastus2, westeurope ou eastasia."
   type        = string
-  default     = "brazilsouth"
+  default     = "centralus"
 }
 
 variable "resource_group_name" {
