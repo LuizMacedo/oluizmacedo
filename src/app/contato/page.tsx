@@ -54,8 +54,8 @@ export default function ContatoPage() {
                 Formulário de contato
               </h3>
               <p className="text-muted text-sm leading-relaxed max-w-md mx-auto mb-6">
-                Preencha o formul\u00e1rio com sua mensagem. Responderei o mais
-                breve poss\u00edvel.
+                Preencha o formulário com sua mensagem. Responderei o mais
+                breve possível.
               </p>
               <Button href={siteConfig.links.tally.contato} external>
                 Abrir formulário de contato
@@ -64,7 +64,7 @@ export default function ContatoPage() {
           </div>
 
           {/* Alternative contact methods */}
-          <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
             <a
               href={`mailto:${siteConfig.email}`}
               className="flex items-center gap-4 p-5 rounded-xl border border-border bg-surface hover:border-accent/30 transition-colors"
