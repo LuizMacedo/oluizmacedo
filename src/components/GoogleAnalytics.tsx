@@ -8,6 +8,15 @@ export function GoogleAnalytics() {
 
   return (
     <>
+      <Script id="google-analytics-consent" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('consent', 'default', {
+            analytics_storage: (typeof localStorage !== 'undefined' && localStorage.getItem('cookie-consent') === 'denied') ? 'denied' : 'granted'
+          });
+        `}
+      </Script>
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
         strategy="afterInteractive"

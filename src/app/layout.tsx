@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import { CookieConsent } from "@/components/CookieConsent";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ScrollToTop } from "@/components/ui/ScrollToTop";
@@ -99,8 +100,26 @@ export default function RootLayout({
             }),
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: siteConfig.name,
+              url: siteConfig.url,
+              description: siteConfig.description,
+              inLanguage: "pt-BR",
+            }),
+          }}
+        />
       </head>
       <body className="min-h-full flex flex-col">
+        <noscript>
+          <div style={{ padding: "2rem", textAlign: "center", color: "#fafaf9", backgroundColor: "#0c0a09" }}>
+            <p>Este site funciona melhor com JavaScript habilitado.</p>
+          </div>
+        </noscript>
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-accent focus:text-background focus:rounded-lg focus:text-sm focus:font-semibold"
@@ -109,9 +128,12 @@ export default function RootLayout({
         </a>
         <GoogleAnalytics />
         <Header />
-        <main id="main-content" className="flex-1">{children}</main>
+        <main id="main-content" className="flex-1 animate-fade-in">
+          {children}
+        </main>
         <Footer />
         <ScrollToTop />
+        <CookieConsent />
       </body>
     </html>
   );
