@@ -4,9 +4,9 @@ export const siteConfig = {
   description:
     "Luiz Macedo é Senior Product Manager na Microsoft. Compartilha reflexões, mentoria e comunidade para profissionais de Tech interessados em produto, senioridade e carreira internacional.",
   url: "https://oluizmacedo.com.br",
-  email: "contato@oluizmacedo.com.br",
+  email: "luizmacedo@outlook.com",
   links: {
-    instagram: "https://instagram.com/quasebomemtudo",
+    instagram: "https://instagram.com/o.pm.intencional",
     linkedin: "https://www.linkedin.com/in/luizfmacedo/",
     tally: {
       waitlist: "https://tally.so/r/GxDg8L",

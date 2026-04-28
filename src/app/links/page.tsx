@@ -125,8 +125,8 @@ const links = [
     external: true,
   },
   {
-    label: "Instagram — @quasebomemtudo",
-    href: "https://instagram.com/quasebomemtudo",
+    label: "Instagram — @o.pm.intencional",
+    href: "https://instagram.com/o.pm.intencional",
     external: true,
   },
 ];

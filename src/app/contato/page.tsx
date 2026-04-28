@@ -64,17 +64,17 @@ export default function ContatoPage() {
           </div>
 
           {/* Alternative contact methods */}
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <a
               href={`mailto:${siteConfig.email}`}
-              className="flex items-center gap-4 p-5 rounded-xl border border-border bg-surface hover:border-accent/30 transition-colors"
+              className="flex items-center gap-4 p-5 rounded-xl border border-border bg-surface hover:border-accent/30 transition-colors sm:col-span-2 lg:col-span-1"
             >
               <div className="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center shrink-0">
                 <MailIcon className="w-5 h-5 text-accent" />
               </div>
               <div>
                 <p className="text-sm font-semibold text-foreground">E-mail</p>
-                <p className="text-xs text-muted">contato@oluizmacedo.com.br</p>
+                <p className="text-xs text-muted">{siteConfig.email}</p>
               </div>
             </a>
             <a
