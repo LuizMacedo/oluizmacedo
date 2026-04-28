@@ -80,11 +80,17 @@ export default function PoliticaDePrivacidadePage() {
             <h2 className="text-xl font-semibold text-foreground mb-3">
               4. Cookies e Rastreamento
             </h2>
-            <p className="text-muted leading-relaxed">
+            <p className="text-muted leading-relaxed mb-3">
               Utilizamos o Google Analytics 4 para análise de tráfego e
               comportamento do site. Esta ferramenta pode usar cookies para
               coletar informações anônimas sobre como você interage com o site.
-              Você pode desabilitar cookies nas configurações do seu navegador.
+            </p>
+            <p className="text-muted leading-relaxed">
+              Ao acessar o site pela primeira vez, você verá um aviso de cookies
+              com as opções de aceitar ou recusar. Se optar por recusar, o
+              rastreamento por analytics será desabilitado e nenhum cookie de
+              análise será armazenado. Você também pode desabilitar cookies
+              diretamente nas configurações do seu navegador.
             </p>
           </div>
 

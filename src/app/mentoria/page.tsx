@@ -232,6 +232,30 @@ export default function MentoriaPage() {
           }),
         }}
       />
+
+      {/* Service JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Mentoria de Carreira em Tech",
+            description:
+              "Mentoria para profissionais de Tech que buscam mais clareza sobre produto, senioridade e carreira internacional.",
+            provider: {
+              "@type": "Person",
+              name: "Luiz Macedo",
+              jobTitle: "Senior Product Manager",
+              worksFor: { "@type": "Organization", name: "Microsoft" },
+              url: siteConfig.url,
+            },
+            serviceType: "Career Mentoring",
+            areaServed: "BR",
+            url: `${siteConfig.url}/mentoria`,
+          }),
+        }}
+      />
     </>
   );
 }

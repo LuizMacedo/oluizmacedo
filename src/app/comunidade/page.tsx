@@ -132,6 +132,25 @@ export default function ComunidadePage() {
         buttonText="Entrar na lista de espera"
         buttonHref={siteConfig.links.tally.waitlist}
       />
+
+      {/* FAQPage JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqItems.map((item) => ({
+              "@type": "Question",
+              name: item.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: item.answer,
+              },
+            })),
+          }),
+        }}
+      />
     </>
   );
 }
