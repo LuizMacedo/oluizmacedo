@@ -116,7 +116,14 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col">
         <noscript>
-          <div style={{ padding: "2rem", textAlign: "center", color: "#fafaf9", backgroundColor: "#0c0a09" }}>
+          <div
+            style={{
+              padding: "2rem",
+              textAlign: "center",
+              color: "#fafaf9",
+              backgroundColor: "#0c0a09",
+            }}
+          >
             <p>Este site funciona melhor com JavaScript habilitado.</p>
           </div>
         </noscript>

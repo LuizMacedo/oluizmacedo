@@ -19,12 +19,17 @@ export function Header() {
   useEffect(() => {
     if (mobileOpen) {
       document.body.style.overflow = "hidden";
+      const handleEsc = (e: KeyboardEvent) => {
+        if (e.key === "Escape") setMobileOpen(false);
+      };
+      document.addEventListener("keydown", handleEsc);
+      return () => {
+        document.body.style.overflow = "";
+        document.removeEventListener("keydown", handleEsc);
+      };
     } else {
       document.body.style.overflow = "";
     }
-    return () => {
-      document.body.style.overflow = "";
-    };
   }, [mobileOpen]);
 
   return (
