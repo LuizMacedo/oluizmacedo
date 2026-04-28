@@ -54,8 +54,8 @@ export default function ContatoPage() {
                 Formulário de contato
               </h3>
               <p className="text-muted text-sm leading-relaxed max-w-md mx-auto mb-6">
-                Preencha o formulário com sua mensagem. Responderei o mais
-                breve possível.
+                Preencha o formulário com sua mensagem. Responderei o mais breve
+                possível.
               </p>
               <Button href={siteConfig.links.tally.contato} external>
                 Abrir formulário de contato
